@@ -1,0 +1,104 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body class="started no_images vsc-initialized" cz-shortcut-listen="true">
+    <div class="wrapper">
+      <section class="quiz">
+        <center>
+          <div class="progress zero">
+            <div class="half"><a class="step first active" href="#" id="step1"><span>Passo</span> 1</a> <a class="step disabled" href="#" id="step2"><span>Passo</span> 2</a> <a class="step disabled" href="#" id="step3"><span>Passo</span> 3</a>
+              <a class="step disabled" href="#" id="step4"><span>Passo</span> 4</a>
+            </div>
+            <div class="half last">
+              <a class="step disabled last" href="#" id="step10"><span class="text">Final</span> <span class="number">5</span></a>
+            </div>
+          </div>
+        </center>
+          <div class="questions started male">
+            <div class="steps doImage no_points active" id="step1">
+              <p class="custom-width">Faça este teste em apenas 30 segundos e comece sua transformação!</p>
+              <h3>Qual é o seu gênero?</h3>
+              <div class="two_by_two">
+                <div class="box three first even" data-sex="male-bg"><input id="sex" name="sex" type="radio" value="male"> <label>Masculino</label>
+                </div>
+                <div class="box three first even" data-sex="female-bg"><input id="sex" name="sex" type="radio" value="female">
+                  <label>Feminino</label>
+                </div>
+              </div>
+            </div>
+            <div class="steps doImage no_points" id="step2">
+              <h3>Quantos anos você tem?</h3>
+              <div class="three_by_three">
+                <div class="box three first even"><input id="age" name="age" type="radio" value="20"> <label>Na casa dos 20</label>
+                </div>
+                <div class="box three odd"><input id="age" name="age" type="radio" value="30">
+                  <label>Na casa dos 30</label>
+                </div>
+                <div class="box three even"><input id="age" name="age" type="radio" value="40">
+                  <label>Na casa dos 40</label>
+                </div>
+                <div class="box three first odd"><input id="age" name="age" type="radio" value="50">
+                  <label>Na casa dos 50</label>
+                </div>
+                <div class="box three even"><input id="age" name="age" type="radio" value="60">
+                  <label>Na casa dos 60</label>
+                </div>
+                <div class="box three odd"><input id="age" name="age" type="radio" value="70">
+                  <label>Na casa dos 70</label>
+                </div>
+              </div>
+            </div>
+            <div class="steps doImage points" id="step3">
+              <h3>Você costuma acordar cansado (a)?</h3>
+              <div class="two_by_two">
+                <div class="box two first"><input id="body_type" name="body_type" type="radio" value="1">
+                  <label>Sim, eu sempre acordo cansado (a)</label>
+                </div>
+                <div class="box two"><input id="body_type" name="body_type" type="radio" value="2"> <label>Sim, mas às vezes acordo bem</label>
+                </div>
+                <div class="box two first"><input id="body_type" name="body_type" type="radio" value="3">
+                  <label>Difciilmente acordo cansado (a)</label>
+                </div>
+                <div class="box two"><input id="body_type" name="body_type" type="radio" value="4">
+                  <label>Eu nunca acordo cansado (a)</label>
+                </div>
+              </div>
+            </div>
+            <div class="steps doImage points" id="step4">
+              <h3 class="custom_width">Você tem a mente aberta para novas descobertas científicas no campo da saúde?</h3>
+              <div class="two_by_two">
+                <div class="box two first"><input id="workout_time" name="workout_time" type="radio" value="1">
+                  <label>Sim</label>
+                </div>
+                <div class="box two"><input id="workout_time" name="workout_time" type="radio" value="2">
+                  <label>Não</label>
+                </div>
+              </div>
+            </div>
+            <div class="steps doImage points" id="step10">
+              <h3>Esta aula secreta tem um limite no número de pessoas que podem participar ao mesmo tempo. Pretende assistir até o final?</h3>
+              <div class="two_by_two" onclick="redirect()">
+                <div class="box two first"><input type="radio" value="1"> <label>Sim</label></div>
+                <div class="box two"><input type="radio" value="2"> <label>Não</label></div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </div>
+    <footer class="zero">
+      <a href="#">© Copyright 2022</a>
+    </footer>
+    <script type="text/javascript">
+        function redirect() {
+            location.href = "https://planosecabarriga.online/" // SEU LINK AQUI
+        }
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.countdownTimer.min.js"></script>
+    <script src="js/new-custom.js"></script>
+  </body>
+</html>
